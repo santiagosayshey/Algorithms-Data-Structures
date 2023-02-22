@@ -13,6 +13,12 @@ int main() {
 
   p1->move = p1->makeMove();
 
+  if (p1->move == 'R')
+  {
+    std::cout << "It's a Tie" << std::endl;
+    return 0;
+  }
+
   Player* winner;
   winner = ref.refGame(p1,c1);
 

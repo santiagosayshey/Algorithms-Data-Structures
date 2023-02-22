@@ -5,7 +5,7 @@
 
 #include "Player.h"
 
-class Referee : public Player
+class Referee
 {
 public:
     Referee();
