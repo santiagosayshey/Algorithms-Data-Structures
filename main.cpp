@@ -1,34 +1,26 @@
-#include "Player.h"
+#include "Human.h"
 #include "Computer.h"
 #include "Referee.h"
-#include <iostream>
-#include <string>
 
-int main() {
 
-  Player* p1 = new Player("Sam");
-  Player* c1 = new Computer();
+int main()
+{
+  Player* p1 = new Human("Sam");
+  Player* p2 = new Computer();
+  Referee* r = new Referee();
 
-  Referee ref;
+  p1->makeMove();
 
-  p1->move = p1->makeMove();
-
-  if (p1->move == 'R')
+  if (p1->move == 'R'|| p1->move == 'r')
   {
-    std::cout << "It's a Tie" << std::endl;
+    std::cout << "Tie" << std::endl;
     return 0;
   }
+  p2->makeMove();
 
   Player* winner;
-  winner = ref.refGame(p1,c1);
-
-  
-  std::cout << winner->getName() << " wins!" << std::endl;
+  winner = r->refGame(p1,p2);
+  std::cout << winner->getName() << std::endl;
 
   return 0;
-
-  delete p1;
-  delete c1;
-  delete winner;
-  
 }

@@ -11,8 +11,12 @@ public:
     Computer();
     ~Computer();
 
+    char makeMove();
+    std::string getName();
+
 private:
 
 };
+
 
 #endif

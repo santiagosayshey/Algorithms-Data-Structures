@@ -4,22 +4,18 @@
 #pragma once
 
 #include <string>
-#include <iostream>
 
 class Player
 {
 public:
-    Player(std::string name);
-    ~Player();
-
-    virtual char makeMove();
-    virtual std::string getName();
-
+    virtual char makeMove()=0;
+    virtual std::string getName()=0;
     char move;
     std::string name;
+
+protected:
+
+
 };
-
-
-
 
 #endif

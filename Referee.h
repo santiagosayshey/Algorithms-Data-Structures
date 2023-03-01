@@ -14,7 +14,6 @@ public:
     Player* refGame(Player* player1, Player* player2);
 
 private:
-    char temp;
 
 };
 

@@ -1,12 +1,22 @@
 #include "Computer.h"
 
-Computer::Computer():
-Player("Computer")
+Computer::Computer()
 {
-  this->move='R';
+  move='R';
+  name="Computer";
 }
 
 Computer::~Computer()
 {
 
+}
+
+char Computer::makeMove()
+{
+    return move;
+}
+
+std::string Computer::getName()
+{
+    return name;
 }
