@@ -2,7 +2,7 @@
 
 Referee::Referee()
 {
-
+  this->tie = new Human("Tie");
 }
 
 Referee::~Referee()
@@ -19,8 +19,12 @@ Player* Referee::refGame(Player* player1, Player* player2)
   {
     return player1;
   }
-  else
+  else if (player1->move == 'S' || player1->move == 's')
   {
     return player2;
+  }
+  else
+  {
+    return tie;
   }
 }

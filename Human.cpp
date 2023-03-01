@@ -2,7 +2,7 @@
 
 Human::Human()
 {
-    this->name="default";
+    this->name="Human";
 }
 
 Human::Human(std::string name)
