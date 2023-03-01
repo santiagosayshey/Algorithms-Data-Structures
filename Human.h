@@ -9,6 +9,7 @@
 class Human : public Player
 {
 public:
+    Human();
     Human(std::string name);
     ~Human();
 
@@ -17,6 +18,8 @@ public:
 
 private:
 };
+
+
 
 
 
