@@ -16,7 +16,7 @@ public:
     
 
 private:
-    Player* tie;
+    Player* winner;
 
 };
 

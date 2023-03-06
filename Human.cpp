@@ -15,9 +15,14 @@ Human::~Human()
 
 }
 
-char Human::makeMove()
+Move* Human::makeMove()
 {
-    std::cin >> move;
+    std::cout << "Enter Move: ";
+    std::cin >> choice;
+    if (choice == "Rock")
+    {
+        move = new Rock();
+    }
     return move;
 }
 

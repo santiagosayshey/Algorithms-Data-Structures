@@ -4,6 +4,7 @@
 #pragma once
 
 #include "Player.h"
+#include "Rock.h"
 #include <iostream>
 
 class Human : public Player
@@ -13,8 +14,11 @@ public:
     Human(std::string name);
     ~Human();
 
-    char makeMove();
+    Move* makeMove();
     std::string getName();
+
+    std::string choice;
+    Move* move;
 
 private:
 };

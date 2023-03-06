@@ -2,7 +2,7 @@
 
 Computer::Computer()
 {
-  move='R';
+  move = new Rock();
   name="Computer";
 }
 
