@@ -11,7 +11,7 @@ public:
     Computer();
     ~Computer();
 
-    char makeMove();
+    Move* makeMove();
     std::string getName();
 
 private:

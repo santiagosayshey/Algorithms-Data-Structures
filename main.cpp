@@ -6,7 +6,7 @@
 int main()
 {
   Player* p1 = new Human("Sam");
-  Player* p2 = new Computer();
+  Player* p2 = new Human("Bob");
   Referee* r = new Referee();
 
 /*   p1->makeMove();
@@ -21,7 +21,7 @@ int main()
 
   Player* winner;
   winner = r->refGame(p1,p2);
-  std::cout << winner->getName() << std::endl;
+  std::cout << winner->getName() << " Is the Winner!" <<  std::endl;
 
   return 0;
 }

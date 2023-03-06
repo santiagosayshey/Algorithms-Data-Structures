@@ -2,7 +2,6 @@
 
 Computer::Computer()
 {
-  move='R';
   name="Computer";
 }
 
@@ -11,9 +10,9 @@ Computer::~Computer()
 
 }
 
-char Computer::makeMove()
+Move* Computer::makeMove()
 {
-    return move;
+  return move;
 }
 
 std::string Computer::getName()

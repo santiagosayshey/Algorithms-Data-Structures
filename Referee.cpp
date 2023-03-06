@@ -2,7 +2,7 @@
 
 Referee::Referee()
 {
-  this->tie = new Human("Tie");
+  this->winner = new Human("Tie");
 }
 
 Referee::~Referee()
@@ -12,19 +12,29 @@ Referee::~Referee()
 
 Player* Referee::refGame(Player* player1, Player* player2)
 {
-  player1->makeMove();
-  player2->makeMove();
+  p1move = player1->makeMove();
+  p2move = player2->makeMove();
 
-  if (player1->move == 'P' || player1->move == 'p')
+  winners = p1move->getWinners();
+  losers = p1move->getLosers();
+  tie = p1move->getTie();
+
+  for (size_t i=0; i<winners.size(); i++)
   {
-    return player1;
+    if (winners.at(i) == p2move->getName())
+    {
+      winner->name=player2->name;
+    }
   }
-  else if (player1->move == 'S' || player1->move == 's')
+
+  for (size_t i=0; i<losers.size(); i++)
   {
-    return player2;
+    if (losers.at(i) == p2move->getName())
+    {
+      winner->name=player1->name;
+    }
   }
-  else
-  {
-    return tie;
-  }
+
+  return winner;
 }
+
