@@ -17,7 +17,6 @@ Human::~Human()
 
 Move* Human::makeMove()
 {
-    std::cout << name << " Enter Move: ";
     std::cin >> choice;
 
     if (choice == "Rock")
