@@ -18,15 +18,10 @@ std::string Move::getName()
 
 std::vector<std::string> Move::getWinners()
 {
-    return winners;
+    return winsTo;
 }
 
 std::vector<std::string> Move::getLosers()
 {
-    return losers;
-}
-
-std::vector<std::string> Move::getTie()
-{
-    return tie;
+    return losesTo;
 }

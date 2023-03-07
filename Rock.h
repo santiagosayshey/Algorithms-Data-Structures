@@ -7,6 +7,8 @@
 #include "Scissors.h"
 #include <string>
 
+
+
 class Rock : public Move
 {
 public:

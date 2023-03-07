@@ -15,9 +15,8 @@ Player* Referee::refGame(Player* player1, Player* player2)
   p1move = player1->makeMove();
   p2move = player2->makeMove();
 
-  winners = p1move->getWinners();
-  losers = p1move->getLosers();
-  tie = p1move->getTie();
+  losers = p1move->getWinners();
+  winners = p1move->getLosers();
 
   for (size_t i=0; i<winners.size(); i++)
   {
@@ -35,6 +34,6 @@ Player* Referee::refGame(Player* player1, Player* player2)
     }
   }
 
-  return nullptr;
+  return winner;
 }
 

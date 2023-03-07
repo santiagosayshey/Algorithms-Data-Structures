@@ -15,13 +15,11 @@ public:
 
     std::vector<std::string> getWinners();
     std::vector<std::string> getLosers();
-    std::vector<std::string> getTie();
 
 protected:
     std::string name;
-    std::vector<std::string> winners;
-    std::vector<std::string> losers;
-    std::vector<std::string> tie;
+    std::vector<std::string> winsTo;
+    std::vector<std::string> losesTo;
 
 };
 

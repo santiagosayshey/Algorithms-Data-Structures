@@ -17,6 +17,7 @@ Human::~Human()
 
 Move* Human::makeMove()
 {
+    std::cout << name << ", Enter Move: ";
     std::cin >> choice;
 
     if (choice == "Rock")
@@ -25,7 +26,16 @@ Move* Human::makeMove()
         move = new Scissors();
     else if (choice == "Paper")
         move = new Paper();
-
+    else if (choice == "Monkey")
+        move = new Monkey();
+    else if (choice == "Robot")
+        move = new Robot();
+    else if (choice == "Ninja")
+        move = new Ninja();
+    else if (choice == "Pirate")
+        move = new Pirate();
+    else if (choice == "Zombie")
+        move = new Zombie();
     return move;
 
 

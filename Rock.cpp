@@ -3,9 +3,8 @@
 Rock::Rock()
 {
   this->name="Rock";
-  winners.push_back("Paper");
-  losers.push_back("Scissors");
-  tie.push_back("Rock");
+  losesTo.push_back("Paper");
+  winsTo.push_back("Scissors");
 }
 
 Rock::~Rock()

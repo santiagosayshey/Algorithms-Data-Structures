@@ -9,6 +9,11 @@
 #include "Rock.h"
 #include "Paper.h"
 #include "Scissors.h"
+#include "Ninja.h"
+#include "Pirate.h"
+#include "Robot.h"
+#include "Zombie.h"
+#include "Monkey.h"
 
 class Human : public Player
 {
