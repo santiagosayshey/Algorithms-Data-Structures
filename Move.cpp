@@ -16,12 +16,12 @@ std::string Move::getName()
 }
 
 
-std::vector<std::string> Move::getWinners()
+std::vector<std::string> Move::getWinsTo()
 {
     return winsTo;
 }
 
-std::vector<std::string> Move::getLosers()
+std::vector<std::string> Move::getLosesTo()
 {
     return losesTo;
 }

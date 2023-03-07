@@ -13,8 +13,8 @@ public:
 
     std::string getName();
 
-    std::vector<std::string> getWinners();
-    std::vector<std::string> getLosers();
+    std::vector<std::string> getWinsTo ();
+    std::vector<std::string> getLosesTo();
 
 protected:
     std::string name;

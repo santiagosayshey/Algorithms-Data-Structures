@@ -15,23 +15,21 @@ Player* Referee::refGame(Player* player1, Player* player2)
   p1move = player1->makeMove();
   p2move = player2->makeMove();
 
-  losers = p1move->getWinners();
-  winners = p1move->getLosers();
+  winsTo = p1move->getWinsTo();
+  losesTo = p1move->getLosesTo();
 
-  for (size_t i=0; i<winners.size(); i++)
+  for (size_t i=0; i<losesTo.size(); i++)
   {
-    if (winners.at(i) == p2move->getName())
+    if (losesTo.at(i) == p2move->getName())
     {
-      std::cout << winners.at(i) <<" and " << p2move->getName() << std::endl;
       winner->name=player2->name;
     }
   }
 
-  for (size_t i=0; i<losers.size(); i++)
+  for (size_t i=0; i<winsTo.size(); i++)
   {
-    if (losers.at(i) == p2move->getName())
+    if (winsTo.at(i) == p2move->getName())
     {
-      std::cout << winners.at(i) <<" and " << p2move->getName() << std::endl;
       winner->name=player1->name;
     }
   }

@@ -18,11 +18,12 @@ public:
 private:
 
     Player* winner;
+
     Move* p1move;
     Move* p2move;
-    std::vector<std::string> winners;
-    std::vector<std::string> losers;
-    std::vector<std::string> tie;
+
+    std::vector<std::string> winsTo;
+    std::vector<std::string> losesTo;
 };
 
 
