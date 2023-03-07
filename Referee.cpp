@@ -12,6 +12,9 @@ Referee::~Referee()
 
 Player* Referee::refGame(Player* player1, Player* player2)
 {
+  player1->getName();
+  player2->getName();
+
   p1move = player1->makeMove();
   p2move = player2->makeMove();
 
