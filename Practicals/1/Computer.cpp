@@ -2,8 +2,8 @@
 
 Computer::Computer()
 {
-  move='R';
-  name="Computer";
+    move = new Rock();
+    this->name="Computer";
 }
 
 Computer::~Computer()
@@ -11,7 +11,7 @@ Computer::~Computer()
 
 }
 
-char Computer::makeMove()
+Move* Computer::makeMove()
 {
     return move;
 }

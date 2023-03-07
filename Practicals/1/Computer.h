@@ -4,6 +4,8 @@
 #pragma once
 
 #include "Player.h"
+#include "Rock.h"
+#include <iostream>
 
 class Computer : public Player
 {
@@ -11,7 +13,7 @@ public:
     Computer();
     ~Computer();
 
-    char makeMove();
+    Move* makeMove();
     std::string getName();
 
 private:

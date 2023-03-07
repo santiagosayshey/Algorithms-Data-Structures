@@ -5,23 +5,36 @@
 
 int main()
 {
-  Player* p1 = new Human("Sam");
-  Player* p2 = new Computer();
   Referee* r = new Referee();
-
-/*   p1->makeMove();
-
-  if (p1->move == 'R'|| p1->move == 'r')
-  {
-    std::cout << "Tie" << std::endl;
-    return 0;
-  }
-
-  p2->makeMove(); */
-
   Player* winner;
+
+  Player* p1 = new Computer();
+  Player* p2 = new Computer();
+
   winner = r->refGame(p1,p2);
-  std::cout << winner->getName() << std::endl;
+  std::cout << winner->getName() <<  std::endl;
+
+  p1 = new Human();
+  p2 = new Human();
+
+  winner = r->refGame(p1,p2);
+  std::cout << winner->getName() <<  std::endl;
+
+  p1 = new Computer();
+  p2 = new Human();
+
+  winner = r->refGame(p1,p2);
+  std::cout << winner->getName() <<  std::endl;
+
+  p1 = new Human();
+  p2 = new Computer();
+
+  winner = r->refGame(p1,p2);
+  std::cout << winner->getName() <<  std::endl;
+
+
+
 
   return 0;
+  
 }
