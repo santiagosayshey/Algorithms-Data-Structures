@@ -5,6 +5,7 @@
 
 #include "Player.h"
 #include "Rock.h"
+#include <iostream>
 
 class Computer : public Player
 {
@@ -14,6 +15,7 @@ public:
 
     Move* makeMove();
     std::string getName();
+    std::string choice;
 
 private:
 
