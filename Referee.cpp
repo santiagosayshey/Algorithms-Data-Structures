@@ -26,6 +26,7 @@ Player* Referee::refGame(Player* player1, Player* player2)
     if (losesTo.at(i) == p2move->getName())
     {
       winner->name=player2->name;
+      return winner;
     }
   }
 
@@ -34,6 +35,7 @@ Player* Referee::refGame(Player* player1, Player* player2)
     if (winsTo.at(i) == p2move->getName())
     {
       winner->name=player1->name;
+      return winner;
     }
   }
 
