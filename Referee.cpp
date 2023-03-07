@@ -22,6 +22,7 @@ Player* Referee::refGame(Player* player1, Player* player2)
   {
     if (winners.at(i) == p2move->getName())
     {
+            std::cout << "here";
       winner->name=player2->name;
     }
   }
@@ -30,6 +31,7 @@ Player* Referee::refGame(Player* player1, Player* player2)
   {
     if (losers.at(i) == p2move->getName())
     {
+      std::cout << "here";
       winner->name=player1->name;
     }
   }

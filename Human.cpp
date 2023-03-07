@@ -7,7 +7,7 @@ Human::Human()
 
 Human::Human(std::string name)
 {
-  this->name="Human";
+  this->name=name;
 }
 
 Human::~Human()
