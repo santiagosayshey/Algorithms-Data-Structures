@@ -5,7 +5,7 @@
 
 int main()
 {
-  Player* p1 = new Human("Sam");
+  Player* p1 = new Computer();
   Player* p2 = new Computer();
   Referee* r = new Referee();
 
