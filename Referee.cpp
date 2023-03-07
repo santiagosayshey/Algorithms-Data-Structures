@@ -12,8 +12,8 @@ Referee::~Referee()
 
 Player* Referee::refGame(Player* player1, Player* player2)
 {
-  player1->getName();
-  player2->getName();
+  std::cout << player1->getName() << std::endl;;
+  std::cout << player2->getName() << std::endl;;
 
   p1move = player1->makeMove();
   p2move = player2->makeMove();
