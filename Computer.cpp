@@ -3,6 +3,7 @@
 Computer::Computer()
 {
     move = new Rock();
+    this->name="Computer";
 }
 
 Computer::~Computer()
