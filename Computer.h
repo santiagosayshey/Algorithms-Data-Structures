@@ -15,7 +15,6 @@ public:
 
     Move* makeMove();
     std::string getName();
-    std::string choice;
 
 private:
 
