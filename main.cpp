@@ -21,7 +21,7 @@ int main()
 
   Player* winner;
   winner = r->refGame(p1,p2);
-  std::cout << winner->getName() << " Is the Winner!" <<  std::endl;
+  std::cout << winner->getName() <<  std::endl;
 
   return 0;
   
