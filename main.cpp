@@ -5,8 +5,8 @@
 
 int main()
 {
-  Player* p1 = new Human();
-  Player* p2 = new Human();
+  Player* p1 = new Human("Sam");
+  Player* p2 = new Human("Bob");
   Referee* r = new Referee();
 
 /*   p1->makeMove();
