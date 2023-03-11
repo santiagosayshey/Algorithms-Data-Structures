@@ -18,7 +18,7 @@ Human::~Human()
 Move* Human::makeMove()
 {
     std::cin >> choice;
-
+    
     if (choice == "Rock")
         move = new Rock();
     else if (choice == "Scissors")
@@ -36,8 +36,6 @@ Move* Human::makeMove()
     else if (choice == "Zombie")
         move = new Zombie();
     return move;
-
-
 }
 
 std::string Human::getName()

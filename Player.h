@@ -11,10 +11,9 @@ class Player
 public:
     virtual Move* makeMove()=0;
     virtual std::string getName()=0;
+protected:
     Move* move;
     std::string name;
-
-protected:
 
 
 };

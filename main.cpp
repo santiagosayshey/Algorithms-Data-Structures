@@ -12,29 +12,44 @@ int main()
   Player* p2 = new Computer();
 
   winner = r->refGame(p1,p2);
-  std::cout << winner->getName() <<  std::endl;
+
+  if (winner == nullptr)
+    std::cout << "Tie" << std::endl;
+  else
+    std::cout << winner->getName() <<  std::endl;
 
   p1 = new Human();
   p2 = new Human();
 
   winner = r->refGame(p1,p2);
-  std::cout << winner->getName() <<  std::endl;
+  if (winner == nullptr)
+    std::cout << "Tie" << std::endl;
+  else
+    std::cout << winner->getName() <<  std::endl;
 
   p1 = new Computer();
   p2 = new Human();
 
   winner = r->refGame(p1,p2);
-  std::cout << winner->getName() <<  std::endl;
+  if (winner == nullptr)
+    std::cout << "Tie" << std::endl;
+  else
+    std::cout << winner->getName() <<  std::endl;
 
   p1 = new Human();
   p2 = new Computer();
 
   winner = r->refGame(p1,p2);
-  std::cout << winner->getName() <<  std::endl;
+  if (winner == nullptr)
+    std::cout << "Tie" << std::endl;
+  else
+    std::cout << winner->getName() <<  std::endl;
 
-
-
-
+  delete r;
+  delete winner;
+  delete p1;
+  delete p2;
+  
   return 0;
   
 }

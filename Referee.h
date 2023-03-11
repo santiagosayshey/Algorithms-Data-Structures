@@ -16,9 +16,6 @@ public:
     
 
 private:
-
-    Player* winner;
-
     Move* p1move;
     Move* p2move;
 

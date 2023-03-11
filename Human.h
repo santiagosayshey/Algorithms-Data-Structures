@@ -24,11 +24,9 @@ public:
 
     Move* makeMove();
     std::string getName();
-    
-    std::string choice;
-    Move* move;
 
 private:
+    std::string choice;
 };
 
 
