@@ -3,6 +3,8 @@
 
 #pragma once
 
+#include <string>
+
 class Reverser
 {
 public:
@@ -10,10 +12,18 @@ public:
     ~Reverser();
 
     int reverseDigit(int n);
+    std::string reverseString(std::string word); 
 
 private:
-
+    int intHelper(int n, int reverse);
+    std::string stringHelper(std::string word, int index, std::string reverse);
 };
+
+
+
+
+
+
 
 
 #endif
